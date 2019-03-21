@@ -1,0 +1,480 @@
+html{
+}
+body{
+    background: #f6f6f6;
+    margin: 0 auto;
+    width:100%;
+    min-width:1350px;
+    max-width:100%;
+    min-height: 700px;
+    height:auto;
+    position: relative;
+    overflow-x:hidden;
+    color: #666;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #6f6f6f;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+button{
+    background: none;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+.content{
+    height: 100%;
+    min-height: 700px;
+}
+.container{
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+.result-wrapper{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/*********
+    定位
+**********/
+.current-location{
+    width: 100%;
+    padding: 0 0 10px 0;
+}
+.current-location .all{
+    display: inline-block;
+    color: rgba(50,190,50,1);
+    border: 1px rgba(50,190,50,1) dashed;
+    text-align: center;
+    width: 50px;
+}
+
+/**************
+    类型选择
+***************/
+.classification{
+    width: 100%;
+    padding: 10px 0;
+}
+.classification label{
+    font-weight: 600;
+    color: #000;
+}
+.classification span{
+    padding: 0 15px;
+}
+.classification span:hover{
+    color: #10c55b;
+}
+
+/**************
+    格式选择
+***************/
+.format{
+    width: 100%;
+    padding: 10px 0;
+}
+.format label{
+    font-weight: 600;
+    color: #000;
+}
+.format span{
+    display: inline-block;
+    padding: 0 15px;
+    vertical-align: middle;
+}
+.format span:hover{
+    color: #10c55b;
+}
+.format span a{
+    display: inline-block;
+    line-height: 40px;
+}
+.format input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    -webkit-appearance:none;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    outline: none;
+    vertical-align: middle;
+}
+.format input[type=checkbox]:checked{
+    background: url("../resources/images/element/check.png")no-repeat center;
+}
+.format span:hover input[type='checkbox'].format-check{
+    border: 1px solid #10c55b;
+}
+
+/***********
+    筛选条
+************/
+.choice-bar{
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
+    background: #fff;
+    box-shadow: 0 2px 3px 2px rgba(100,100,100,.1);
+}
+.nav-list{
+    width: 90px;
+    border-right: 1px solid #f6f6f6;
+    text-align: center;
+    float: left;
+}
+.nav-list a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.nav-list ul{
+    width: 120px;
+    background: #fff;
+    box-shadow: 0 2px 3px 2px rgba(100,100,100,.1);
+    position: absolute;
+    z-index: 1000;
+}
+.type-list,.copyright-list{
+    display: none;
+}
+.type-list:hover,.copyright-list:hover{
+    display: block;
+}
+.type-list li:hover,.copyright-list li:hover{
+    color: #10c55b;
+}
+.type-choice:hover+.type-list{
+    display: block;
+}
+.copyright-choice:hover+.copyright-list{
+    display: block;
+}
+.sort-label{
+    text-align: center;
+    width: 80px;
+    margin-left: 40px;
+    float: left;
+}
+.sort-order{
+    float: left;
+    padding: 0 10px;
+
+}
+.sort-order a{
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #6f6f6f;
+    font-size: 12px;
+}
+.sort-order a:hover{
+    color: #fff;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+}
+a.sort-choose{
+    color: #fff;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+}
+.page-turning{
+    padding: 0 10px;
+    float: right;
+}
+.page-account{
+    float: right;
+    margin-right: 30px;
+}
+
+.related-search{
+    width: 100%;
+    border: 1px rgba(50,190,50,1) dashed;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+.related-search p{
+    margin: 0 20px;
+    font-weight: 600;
+    float: left;
+}
+.related-search a{
+    display: inline-block;
+    padding: 0 30px 0 0;
+}
+.related-search a:hover{
+    color: #10c55b;
+}
+
+/*************
+    搜索结果
+**************/
+.search-result-wrapper{
+    width: 1100px;
+    height: auto;
+    margin: 30px auto;
+    /*background: #fff;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content:space-between;
+}
+.template-display{
+    max-width: 300px;
+    min-width: 0;
+    max-height: 400px;
+    min-height: 0;
+    /*width: 250px;*/
+    /*height: 380px;*/
+    margin: 10px 5px;
+    background: #17e66c;
+    box-sizing: content-box;
+    border: 5px rgba(255,255,255,1) solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+.mask{
+    background: rgba(40,40,40,.6);
+    position: absolute;
+    /*max-width: 300px;*/
+    /*min-width: 200px;*/
+    /*max-height: 400px;*/
+    /*min-height: 150px;*/
+    width: 250px;
+    height: 350px;
+    opacity: 0;
+    transition: all ease-in-out .2s;
+}
+.collection-choice{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: rgba(250,250,255,1);
+    float: right;
+    border-radius: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+.download-button-container{
+    position: absolute;
+    display: block;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+.download-button{
+    display: block;
+    width: 50%;
+    height: 50px;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+    text-align: center;
+    line-height: 50px;
+    color: rgba(250,250,250,1);
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+}
+.download-button:hover{
+    background: linear-gradient(to right,#3cf08c,#10c55b);
+}
+.demo-description{
+    width: 100%;
+    height: 30px;
+    background: rgba(250,250,250,1);
+    position: relative;
+    font-size: 14px;
+    color: rgba(80,80,80,1);
+    line-height: 30px;
+}
+.demo-description p{
+    margin: 0;
+}
+.template-display:hover{
+    cursor: pointer;
+}
+.template-display:hover .mask{
+    opacity: 1;
+}
+.classification span.kind-choose a{
+    color: #10C55B;
+}
+/*.class-choose{*/
+/*color: #10C55B;*/
+/*}*/
+
+
+/*************
+    底部尾注
+**************/
+footer{
+    width: 100%;
+    height: 50px;
+    background: #17e66c;
+    padding: 10px 50px;
+    color: rgba(250,250,250,1);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+footer span{
+    display: inline-block;
+    line-height: 30px;
+}
+
+/**************
+     登录
+***************/
+
+.login-container{
+    position: fixed;
+    float: left;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background: rgba(40,40,40,.6);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.login-page{
+    width: 500px;
+    height: 250px;
+    background: rgba(250,250,250,1);
+    border-radius: 5px;
+    margin: 200px auto;
+    box-shadow: 0 2px 10px 2px rgba(40,40,40,.4);
+}
+.head{
+    height: 50px;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+}
+.headline{
+    display: inline-block;
+    line-height: 30px;
+    float: left;
+    color: #fff;
+}
+.cancel{
+    display: inline-block;
+    line-height: 30px;
+    float: right;
+    color: #fff;
+}
+.login-info{
+    padding: 20px 30px;
+}
+.account-area,.password-area{
+    padding: 0 auto;
+    margin: 10px auto;
+    width: 400px;
+    text-align: center;
+}
+.login-container input{
+    margin: 0;
+}
+.info-input{
+    display: inline-block;
+    min-width: 200px;
+    border-radius: 2px 0 0 2px;
+    border:1px solid rgba(0, 0, 0, .15);
+    background-color: rgba(250,250,250,.8);
+    height: 30px;
+    padding: 6px 12px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .1) inset,0 2px 3px rgba(0, 0, 0, 0.08);
+    color: #555;
+    font-size: 14px;
+    position: relative;
+    transition: all ease-in-out .2s;
+}
+.info-input:focus{
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset, 0 2px 10px 0 rgba(0, 0, 0, .2);
+}
+.submit-container{
+    text-align: center;
+}
+.login-submit,.forget-password{
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    line-height: 20px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    color: #fff;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+}
+.login-submit:hover{
+    background: linear-gradient(to right,#3cf08c,#10c55b);
+}
+.forget-password{
+    background: #ef4300;
+}
+.login-info label{
+    color: rgba(40,40,40,.7);
+}
+
+
+
+/*************
+    iconfont
+**************/
+.choice .iconfont{
+    color: rgba(170,170,170,.6);
+    margin-right: 10px;
+    font-size: 19px;
+}
+.nav-list .icon-icon_arrow_bottom{
+    color: rgba(102,102,102,.7);
+}
+.page-turning .icon-icon_arrow_left,.icon-icon_arrow_right{
+    color: #10c55b;
+}
+.collection-choice .icon-collection{
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 600;
+    color: rgba(100,100,100,1);
+}
+.icon-xiazai{
+    font-size: 20px;
+    margin-right: 5px;
+}
+

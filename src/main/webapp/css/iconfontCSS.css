@@ -1,0 +1,53 @@
+.icon-more{
+    font-size: 24px;
+    line-height: 1;
+}
+.icon-zuanshi{
+    font-size: 24px;
+    line-height: 1;
+}
+.icon-xiaoxi{
+    font-size: 28px;
+    line-height: 1;
+}
+.design-creativity .iconfont{
+    font-size: 30px;
+    color: rgba(50,210,50,1);
+}
+.icon-renwuzhengmian{
+    font-weight: 700;
+}
+.template-creativity .iconfont{
+    font-size: 30px;
+    color: rgba(0,150,240,1);
+}
+.icon-sousuo{
+    font-size: 20px;
+    font-weight: 500;
+}
+.choice .iconfont{
+    color: rgba(170,170,170,.6);
+    margin-right: 10px;
+    font-size: 19px;
+}
+.choice .icon-zhaoxiangji{
+    font-size: 22px;
+}
+.choice .icon-tupian{
+    font-size: 22px;
+}
+.pop-template-container .icon-remen{
+    font-size: 40px;
+    color: #17e66c;
+    margin-right: 10px;
+}
+.collection-choice .icon-collection{
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 600;
+    color: rgba(100,100,100,1);
+}
+.icon-xiazai{
+    font-size: 20px;
+    margin-right: 5px;
+}

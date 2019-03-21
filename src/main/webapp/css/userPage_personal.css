@@ -1,0 +1,459 @@
+html{
+}
+body{
+    background: #f6f6f6;
+    margin: 0 auto;
+    width:100%;
+    min-width:1350px;
+    max-width:100%;
+    height:auto;
+    position: relative;
+    overflow-x:hidden;
+    color: #666;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #6f6f6f;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+video{
+    display: block;
+    max-width: 270px;
+}
+button{
+    background: none;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+
+.navbar:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.content{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+}
+.box{
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+.user-bar{
+    width: 100%;
+    height: 60px;
+}
+.user-bar ul{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.user-bar li{
+    float: left;
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 50px;
+    font-size: 16px;
+    width: auto;
+    height: 100%;
+}
+.user-bar li:hover{
+    cursor: pointer;
+}
+.active{
+    color: #10C55B;
+    border-bottom: 3px solid #10C55B;
+}
+
+.personal-page{
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+}
+.personal-head{
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+.personal-bg{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-image: url(../resources/images/personal-bg/personalbg.jpg);
+}
+.concern-text{
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    vertical-align: baseline;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    z-index: 20;
+    background: linear-gradient(to top,rgba(40,40,40,.5),rgba(140,140,140,.1));;
+}
+.concern,.concerned{
+    display: inline-block;
+    line-height: 45px;
+    margin: 0 100px;
+    font-size: 16px;
+    color: #fff;
+}
+.personal-portrait{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -60px;
+    z-index: 25;
+    background: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-image: url("../resources/head_portrait/initial.png");
+}
+.person-username{
+    margin-top: 70px;
+    text-align: center;
+}
+.person-username h4{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.person-intro{
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(40,40,40,.5);
+}
+.person-intro span{
+    display: inline-block;
+    line-height: 30px;
+}
+.person-intro span:hover{
+    cursor: pointer;
+}
+.person-intro span:hover .icon-xiugai{
+    display: inline;
+}
+.personal-btn{
+    margin: 20px 0;
+    text-align: center;
+}
+.personal-btn span{
+    display: inline-block;
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    border: 1px #10C55B solid;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+.personal-btn span a{
+    display: block;
+    height: 100%;
+    color: #10C55B;
+    font-size: 16px;
+    /*background: linear-gradient(to right,#3cf08c,#10c55b);*/
+}
+.personal-btn span a.start-create{
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+}
+.personal-btn span a.start-create:hover{
+    background: linear-gradient(to right,#3cf08c,#10c55b);
+}
+.personal-choice{
+    margin-top: 20px;
+    text-align: center;
+    height: 60px;
+}
+.personal-choice li{
+    width: 100px;
+    line-height: 60px;
+    display: inline-block;
+    margin: 0 20px;
+}
+.personal-choice li a{
+    display: block;
+    font-size: 16px;
+    height: 100%;
+}
+.works-bar{
+    height: 50px;
+    padding: 0 50px;
+}
+.works-bar li{
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    margin: 0 20px;
+}
+.works-bar li:hover{
+    cursor: pointer;
+}
+.works-bar li a{
+    font-size: 16px;
+}
+.bar-choose{
+    color: #10C55B;
+}
+.works-display{
+    width: 1200px;
+    height: auto;
+    margin: 30px auto;
+    /*background: #fff;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content:space-between;
+}
+.works-display .template-display{
+    max-width: 300px;
+    min-width: 0;
+    max-height: 400px;
+    min-height: 0;
+    /*width: auto;*/
+    /*height: auto;*/
+    margin: 10px;
+    background: #17e66c;
+    box-sizing: content-box;
+    border: 5px rgba(255,255,255,1) solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+.works-display  .demo-description{
+    width: 100%;
+    height: 30px;
+    background: rgba(250,250,250,1);
+    position: relative;
+    font-size: 14px;
+    color: rgba(80,80,80,1);
+    line-height: 30px;
+}
+.works-display .demo-description p{
+    margin: 0;
+}
+.works-display .template-display:hover{
+    cursor: pointer;
+}
+.works-content{
+    margin-bottom: 100px;
+    display: block;
+}
+.collection-bar{
+    height: 50px;
+    padding: 0 50px;
+}
+.collection-bar li{
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    margin: 0 20px;
+}
+.collection-bar li:hover{
+    cursor: pointer;
+}
+.collection-bar li a{
+    font-size: 16px;
+}
+.collection-box{
+    width: 1100px;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content:space-between;
+}
+.collection-box .template-display{
+    max-width: 300px;
+    min-width: 0;
+    max-height: 400px;
+    min-height: 0;
+    /*width: auto;*/
+    /*height: auto;*/
+    margin: 10px 30px;
+    background: #17e66c;
+    box-sizing: content-box;
+    border: 5px rgba(255,255,255,1) solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+.collection-box .demo-description{
+    width: 100%;
+    height: 30px;
+    background: rgba(250,250,250,1);
+    position: relative;
+    font-size: 14px;
+    color: rgba(80,80,80,1);
+    line-height: 30px;
+}
+.collection-box .demo-description p{
+    margin: 0;
+}
+.collection-box .template-display:hover{
+    cursor: pointer;
+}
+.collection-content{
+    margin-bottom: 100px;
+    display: none;
+}
+
+.concern-bar{
+    height: 50px;
+    padding: 0 50px;
+}
+.concern-bar li{
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    margin: 0 20px;
+}
+.concern-bar li:hover{
+    cursor: pointer;
+}
+.concern-bar li a{
+    font-size: 16px;
+}
+.concern-box-container{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+.concern-box{
+    width: 1200px;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.concern-box li{
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #E4E7ED;
+    padding: 30px;
+}
+.concern-userInfo{
+    float: left;
+}
+.userInfo-portrait{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    margin-right: 20px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    cursor: pointer;
+    background-image: url("../resources/head_portrait/initial.png");
+}
+.userInfo-text{
+    float: left;
+    padding-top: 30px;
+}
+.concern-username{
+    font-size: 20px;
+    color: #595959;
+}
+.concern-location{
+    font-size: 14px;
+    color: #BFBFBF;
+}
+.concern-followNum{
+    font-size: 16px;
+    color: #595959;
+    margin-top: 10px;
+}
+
+.concern-userWorks{
+    float: right;
+    width: 650px;
+    height: 180px;
+}
+.concern-userWorks .userWorks{
+    width: 140px;
+    height: 100%;
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
+.concern-content{
+    margin-bottom: 50px;
+    display: none;
+}
+
+
+
+/*************
+    底部尾注
+**************/
+footer{
+    width: 100%;
+    height: 50px;
+    background: #17e66c;
+    padding: 10px 50px;
+    color: rgba(250,250,250,1);
+    text-align: center;
+    margin-top: 100px;
+}
+footer span{
+    display: inline-block;
+    line-height: 30px;
+}
+
+/*************
+    iconfont
+**************/
+.icon-xiugai{
+    color: #10C55B;
+    font-size: 26px;
+    vertical-align: middle;
+    display: none;
+}

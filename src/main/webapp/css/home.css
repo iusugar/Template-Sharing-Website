@@ -1,0 +1,774 @@
+html{
+}
+body{
+    background: #f6f6f6;
+    margin: 0 auto;
+    width:100%;
+    min-width:1350px;
+    max-width:100%;
+    height:1000px;
+    position: relative;
+    overflow-x:hidden;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+.container{
+    position: relative;
+    padding-top: 60px;
+}
+.top-header{
+    top: 0;
+    z-index: 9999;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(255,255,255);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px rgba(40,40,40,.2) solid;
+    min-width: 1350px;
+
+}
+.brand{
+    padding: 8px 20px;
+    float: left;
+}
+.brand img{
+    height: 40px;
+}
+.vertical-line{
+    margin: 20px 10px 15px -15px;
+    width: 2px;
+    height: 20px;
+    float: left;
+    background: rgba(40,40,40,.2);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.slogan{
+    font-size: 12px;
+    color: rgba(40,40,40,.5);
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+    line-height: 2;
+    padding: 18px 0;
+    margin-right: 70px;
+    float: left;
+}
+.design,.template,.animation,.more{
+    float: left;
+    padding: 15px 20px;
+    background: transparent;
+    transition: all ease-in-out .2s;
+}
+a.nav-container{
+    font-size: 15px;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+    line-height: 2;
+    color: rgba(40,40,40,.7);
+}
+.navbar-dropdown:hover a.nav-container{
+    color: #fff;
+}
+.design:hover{
+    background: linear-gradient(90deg,rgba(50,210,50,1),rgba(50,190,50,1));
+}
+.template:hover{
+    background: linear-gradient(90deg,rgba(0,170,255,1),rgba(0,150,240,1));
+}
+.animation:hover{
+    background: linear-gradient(90deg,rgba(0,170,255,1),rgba(0,150,240,1));
+}
+.more:hover{
+    background: linear-gradient(90deg,rgba(50,210,50,1),rgba(50,190,50,1));
+    color: #fff;
+}
+.vip-container{
+    display: block;
+    color: rgba(40,40,40,.7);
+}
+.message-container{
+    display: block;
+    color: rgba(40,40,40,.7);
+}
+.vip{
+    float: right;
+    padding: 18px 30px;
+}
+.message{
+    float: right;
+    padding: 16px 50px 16px 30px;
+}
+.user{
+    float: right;
+    height: 60px;
+    margin-right: 70px;
+}
+.img-container{
+    float: left;
+    padding: 12px 0;
+}
+.head-image{
+    display: inline-block;
+}
+.user-info{
+    display: inline-block;
+}
+.img-container img{
+    width: 36px;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.info-container{
+    float: right;
+    padding: 14px 0;
+}
+.info-container p{
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    font-size: 12px;
+    color: rgba(40,40,40,.5);
+}
+.info-container p.user-status{
+    font-size: 10px;
+}
+
+.navbar-dropdown-menu{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    list-style: none;
+    padding: 0 100px;
+    z-index: 1;
+    /*border: 2px solid #eaeaeaaa;*/
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    transition: all 0.2s linear;
+    overflow: hidden;
+    margin: 60px 0 0 0;
+    text-align: center;
+    /*display: none;*/
+    opacity: 0;
+    max-height: 0;
+}
+.navbar-dropdown-menu li{
+    display: inline-block;
+    padding: 10px 0;
+}
+.design-dropdown-menu li:hover p{
+    color: rgba(50,210,50,1);
+}
+.design-creativity,.template-creativity{
+    display: block;
+    padding: 0 50px;
+}
+.navbar-dropdown-menu p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 2;
+    padding-top: 5px;
+    color: rgba(40,40,40,.7);
+}
+.template-dropdown-menu li:hover p{
+    color: rgba(0,150,240,1);
+}
+
+/*******************/
+    /*search模块*/
+/*******************/
+.search-container{
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px rgba(40,40,40,.2) solid;
+    width: 100%;
+    height: 85px;
+    padding-top: 20px;
+    z-index: 1000;
+}
+.search-bar{
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0 50px;
+    /*background-color: aquamarine;*/
+}
+
+ul.search-choice{
+    list-style: none;
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+}
+.search-choice li:hover{
+    cursor: pointer;
+}
+.mini-search ul.search-choice{
+    max-width: 80px;
+    margin-left: 20px;
+}
+button.default-choice{
+    width: 100px;
+    height: 45px;
+    background-color: rgba(220,220,220,.3);
+    color: rgba(40,40,40,.7);
+    border-radius: 3px 0 0 3px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    position: relative;
+}
+.mini-search button.default-choice{
+    height: 35px;
+    width: 80px;
+    padding: 0 5px;
+}
+.mini-search button.default-choice span{
+    font-size: 12px;
+}
+button.choice{
+    display: none;
+    position: relative;
+    background: rgba(250,250,250,1);
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 1px rgba(40,40,40,.1) solid;
+    width: 150px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 1.429;
+    text-align: left;
+    vertical-align: middle;
+    color: rgba(70,70,70,.8);
+}
+.choice i{
+    vertical-align: middle;
+}
+button.default-choice:hover{
+    color: #17e66c;
+}
+button.choice:hover {
+    color: #17e66c;
+}
+button.choice:hover .iconfont{
+    color: #17e66c;
+}
+.search-group{
+    float: left;
+    display: inline-block;
+}
+.search-input{
+    display: block;
+    float: left;
+    min-width: 500px;
+    border-radius: 2px 0 0 2px;
+    border:1px solid rgba(0, 0, 0, .15);
+    border-left: none;
+    background-color: rgba(250,250,250,.8);
+    min-height: 45px;
+    padding: 6px 12px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .1) inset,0 2px 3px rgba(0, 0, 0, 0.08);
+    color: #555;
+    font-size: 14px;
+    position: relative;
+    transition: all ease-in-out .2s;
+}
+.mini-search .search-input{
+    min-width: 300px;
+    min-height: 35px;
+}
+.search-input:focus{
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset, 0 2px 10px 0 rgba(0, 0, 0, .2);
+}
+.search-input::placeholder{
+    color: rgba(180,180,180,1);
+    font-size: 13px;
+}
+.search-submit{
+    display: inline-block;
+    min-height: 45px;
+    min-width: 100px;
+    padding: 10px 30px;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+    color: rgba(255,255,4255,1);
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    border: none;
+}
+.search-submit:hover{
+    background: linear-gradient(to right,#3cf08c,#10c55b);
+}
+.mini-search .search-submit{
+    min-height: 35px;
+    min-width: 80px;
+    padding: 5px 10px;
+}
+.default-choice:hover{
+    cursor: pointer;
+}
+.default-choice span{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.scroll-select{
+    display: block;
+}
+.mini-search{
+    position: relative;
+    float: left;
+    padding: 12px 10px;
+    display: none;
+}
+
+/****************
+    轮播图模块
+*****************/
+
+.picture-scroll-container *{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+.picture-scroll-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+}
+.carousel-content{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    /*border-radius:10px;*/
+}
+.carousel{
+    height: 300px;
+    position: absolute;
+}
+.carousel li{
+    float: left;
+}
+.carousel li,.carousel li img{
+    width: 1400px;
+    height: 300px;
+}
+.img-index{
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-index{
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-index li{
+    float: left;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 3px;
+    color: #fff;
+}
+.img-index li.js_index,.img-index li:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+.carousel-prev,.carousel-next{
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    cursor: pointer;
+    display: none;
+}
+.carousel-prev{
+    left: 0;
+}
+.carousel-next{
+    right: 0;
+}
+
+/*****************
+    热门模板内容
+******************/
+img{
+    display: block;
+}
+.adjustment{
+    margin-top: 300px;
+}
+.pop-template-container{
+    width: 100%;
+    height: auto;
+    /*background: rgba(255,255,255,1);*/
+    position: relative;
+    padding: 30px 50px;
+}
+.pop-heading{
+    width: 70%;
+    height: 50px;
+    border-bottom: 2px rgba(0,0,0,.2) solid;
+    position: relative;
+}
+.pop-heading span{
+    display: inline-block;
+}
+.pop-type{
+    position: absolute;
+    bottom: 0;
+}
+.pop-type span:first-child{
+    margin-right: 40px;
+}
+.pop-tag{
+    display: inline-block;
+    background: #10c55b;
+    padding: 10px 20px;
+    width: 200px;
+    color: rgba(255,255,255,1);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    vertical-align: bottom;
+    text-align: center;
+}
+.pop-choice{
+    padding: 5px 15px;
+    color: rgba(40,40,40,.5);
+    font-size: 14px;
+}
+.pop-choice:hover{
+    color: rgba(255,80,20,1);
+}
+.pop-body{
+    width: 100%;
+    position: relative;
+    padding: 20px 50px 0 50px;
+    height: auto;
+}
+.pop-body .template-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pop-body .ppt-template{
+    width: 270px;
+    height: 390px;
+    background: #17e66c;
+    box-sizing: content-box;
+    border: 5px rgba(255,255,255,1) solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+.pop-body .portrait{
+    width: 270px;
+    height: 390px;
+    background: #17e66c;
+    box-sizing: content-box;
+    border: 5px rgba(255,255,255,1) solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+.pop-body .wallpaper{
+    width: 240px;
+    height: 180px;
+    background: #17e66c;
+    box-sizing: content-box;
+    border: 5px rgba(255,255,255,1) solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+.pop-body .video-template{
+    width: 360px;
+    height: 200px;
+    background: #17e66c;
+    box-sizing: content-box;
+    border: 5px rgba(255,255,255,1) solid;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.mask{
+    background: rgba(40,40,40,.6);
+    position: absolute;
+    opacity: 0;
+}
+.ppt-template .mask{
+    width: 270px;
+    height: 360px;
+
+}
+.portrait .mask{
+    width: 270px;
+    height: 360px;
+}
+.wallpaper .mask{
+    width: 240px;
+    height: 150px;
+}
+.collection-choice{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: rgba(250,250,255,1);
+    float: right;
+    border-radius: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+.download-button-container{
+    position: absolute;
+    display: block;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+.download-button{
+    display: block;
+    width: 50%;
+    height: 50px;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+    text-align: center;
+    line-height: 50px;
+    color: rgba(250,250,250,1);
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+}
+.download-button:hover{
+    background: linear-gradient(to right,#3cf08c,#10c55b);
+}
+.template-display:hover{
+    cursor: pointer;
+}
+.template-display:hover .mask{
+    opacity: 1;
+}
+.demo-description{
+    width: 100%;
+    height: 30px;
+    background: rgba(250,250,250,1);
+    position: relative;
+    font-size: 14px;
+    color: rgba(80,80,80,1);
+    line-height: 30px;
+}
+.demo-description p{
+    margin: 0;
+}
+
+
+/*************
+    底部尾注
+**************/
+footer{
+    width: 100%;
+    height: 50px;
+    background: #17e66c;
+    padding: 10px 50px;
+    color: rgba(250,250,250,1);
+    text-align: center;
+    margin-top: 100px;
+}
+footer span{
+    display: inline-block;
+    line-height: 30px;
+}
+
+/**************
+     登录
+***************/
+
+.login-container{
+    position: fixed;
+    float: left;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background: rgba(40,40,40,.6);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.login-page{
+    width: 500px;
+    height: 250px;
+    background: rgba(250,250,250,1);
+    border-radius: 5px;
+    margin: 200px auto;
+    box-shadow: 0 2px 10px 2px rgba(40,40,40,.4);
+}
+.head{
+    height: 50px;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+}
+.headline{
+    display: inline-block;
+    line-height: 30px;
+    float: left;
+    color: #fff;
+}
+.cancel{
+    display: inline-block;
+    line-height: 30px;
+    float: right;
+    color: #fff;
+}
+.login-info{
+    padding: 20px 30px;
+}
+.account-area,.password-area{
+    padding: 0 auto;
+    margin: 10px auto;
+    width: 400px;
+    text-align: center;
+}
+.login-container input{
+    margin: 0;
+}
+.info-input{
+    display: inline-block;
+    min-width: 200px;
+    border-radius: 2px 0 0 2px;
+    border:1px solid rgba(0, 0, 0, .15);
+    background-color: rgba(250,250,250,.8);
+    height: 30px;
+    padding: 6px 12px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .1) inset,0 2px 3px rgba(0, 0, 0, 0.08);
+    color: #555;
+    font-size: 14px;
+    position: relative;
+    transition: all ease-in-out .2s;
+}
+.info-input:focus{
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset, 0 2px 10px 0 rgba(0, 0, 0, .2);
+}
+.submit-container{
+    text-align: center;
+}
+.login-submit,.forget-password{
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    line-height: 20px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    color: #fff;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+}
+.login-submit:hover{
+    background: linear-gradient(to right,#3cf08c,#10c55b);
+}
+.forget-password{
+    background: #ef4300;
+}
+.login-info label{
+    color: rgba(40,40,40,.7);
+}
+
+
+
+
+
+/**************
+    iconfont
+***************/
+.icon-more{
+    font-size: 24px;
+    line-height: 1;
+}
+.icon-zuanshi{
+    font-size: 24px;
+    line-height: 1;
+}
+.icon-xiaoxi{
+    font-size: 28px;
+    line-height: 1;
+}
+.design-creativity .iconfont{
+    font-size: 30px;
+    color: rgba(50,210,50,1);
+}
+.icon-renwuzhengmian{
+    font-weight: 700;
+}
+.template-creativity .iconfont{
+    font-size: 30px;
+    color: rgba(0,150,240,1);
+}
+.icon-sousuo{
+    font-size: 20px;
+    font-weight: 500;
+}
+.choice .iconfont{
+    color: rgba(170,170,170,.6);
+    margin-right: 10px;
+    font-size: 19px;
+}
+.choice .icon-zhaoxiangji{
+    font-size: 22px;
+}
+.choice .icon-tupian{
+    font-size: 22px;
+}
+.pop-template-container .icon-remen{
+    font-size: 40px;
+    color: #17e66c;
+    margin-right: 10px;
+}
+.collection-choice .icon-collection{
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 600;
+    color: rgba(100,100,100,1);
+}
+.icon-xiazai{
+    font-size: 20px;
+    margin-right: 5px;
+}

@@ -1,0 +1,227 @@
+.navbar{
+    z-index: 9999;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(255,255,255);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px rgba(40,40,40,.2) solid;
+    min-width: 1350px;
+}
+.brand{
+    padding: 8px 20px;
+    float: left;
+}
+.brand img{
+    height: 40px;
+}
+.vertical-line{
+    margin: 20px 10px 15px -15px;
+    width: 2px;
+    height: 20px;
+    float: left;
+    background: rgba(40,40,40,.2);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.slogan{
+    font-size: 12px;
+    color: rgba(40,40,40,.5);
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+    line-height: 2;
+    padding: 18px 0;
+    margin-right: 70px;
+    float: left;
+}
+.vip-container{
+    display: block;
+    color: rgba(40,40,40,.7);
+}
+.message-container{
+    display: block;
+    color: rgba(40,40,40,.7);
+}
+.vip{
+    float: right;
+    padding: 18px 30px;
+}
+.message{
+    float: right;
+    padding: 16px 50px 16px 30px;
+}
+.user{
+    float: right;
+    height: 60px;
+    margin-right: 70px;
+}
+.img-container{
+    float: left;
+    padding: 12px 0;
+}
+.head-image{
+    display: inline-block;
+}
+.user-info{
+    display: inline-block;
+}
+.img-container img{
+    width: 36px;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.info-container{
+    float: right;
+    padding: 14px 0;
+}
+.info-container p{
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    font-size: 12px;
+    color: rgba(40,40,40,.5);
+}
+.info-container p.user-status{
+    font-size: 10px;
+}
+ul.search-choice{
+    list-style: none;
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+}
+.search-choice li:hover{
+    cursor: pointer;
+}
+.mini-search ul.search-choice{
+    max-width: 80px;
+    margin-left: 20px;
+}
+button.default-choice{
+    width: 100px;
+    height: 45px;
+    background-color: rgba(220,220,220,.3);
+    color: rgba(40,40,40,.7);
+    border-radius: 3px 0 0 3px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    position: relative;
+}
+.mini-search button.default-choice{
+    height: 35px;
+    width: 80px;
+    padding: 0 5px;
+}
+.mini-search button.default-choice span{
+    font-size: 12px;
+}
+button.choice{
+    display: none;
+    position: relative;
+    background: rgba(250,250,250,1);
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 1px rgba(40,40,40,.1) solid;
+    width: 150px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 1.429;
+    text-align: left;
+    vertical-align: middle;
+    color: rgba(70,70,70,.8);
+}
+.choice i{
+    vertical-align: middle;
+}
+button.default-choice:hover{
+    color: #17e66c;
+}
+button.choice:hover {
+    color: #17e66c;
+}
+button.choice:hover .iconfont{
+    color: #17e66c;
+}
+.search-group{
+    float: left;
+    display: inline-block;
+}
+.search-input{
+    display: block;
+    float: left;
+    min-width: 500px;
+    border-radius: 2px 0 0 2px;
+    border:1px solid rgba(0, 0, 0, .15);
+    border-left: none;
+    background-color: rgba(250,250,250,.8);
+    min-height: 45px;
+    padding: 6px 12px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .1) inset,0 2px 3px rgba(0, 0, 0, 0.08);
+    color: #555;
+    font-size: 14px;
+    position: relative;
+    transition: all ease-in-out .2s;
+}
+.mini-search .search-input{
+    min-width: 300px;
+    min-height: 35px;
+}
+.search-input:focus{
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset, 0 2px 10px 0 rgba(0, 0, 0, .2);
+}
+.search-input::placeholder{
+    color: rgba(180,180,180,1);
+    font-size: 13px;
+}
+.search-submit{
+    display: inline-block;
+    min-height: 45px;
+    min-width: 100px;
+    padding: 10px 30px;
+    background: linear-gradient(to right,#17e66c,#10c55b);
+    color: rgba(255,255,4255,1);
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    border: none;
+}
+.search-submit:hover{
+    background: linear-gradient(to right,#3cf08c,#10c55b);
+}
+.mini-search .search-submit{
+    min-height: 35px;
+    min-width: 80px;
+    padding: 5px 10px;
+}
+.default-choice:hover{
+    cursor: pointer;
+}
+.default-choice span{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.mini-search{
+    position: relative;
+    float: left;
+    padding: 12px 10px;
+    display: block;
+}
+
+/**************
+    iconfont
+***************/
+.icon-zuanshi{
+    font-size: 24px;
+    line-height: 1;
+}
+.icon-xiaoxi{
+    font-size: 28px;
+    line-height: 1;
+}
